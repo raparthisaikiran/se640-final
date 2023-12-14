@@ -1,0 +1,23 @@
+<div class="container">
+    <form class="row g-3">
+        <div class="col-md-12 p-2 buttons">
+            <button type="button" class="btn btn-secondary">Sale</button>
+            <button type="button" class="btn btn-success">Buy</button>
+          </div>
+      <div class="col-md-12">
+        <label for="vehicle" class="form-label">Vehicle</label>
+        <input type="text" class="form-control" id="vehicle" [(ngModel)]="vehicle" name="vehicle">
+      </div>
+      <div class="col-md-12">
+        <label for="min-price" class="form-label">Min Price</label>
+        <input type="number" class="form-control" id="min-price" [(ngModel)]="minPrice" name="minPrice">
+      </div>
+      <div class="col-12">
+        <label for="max-price" class="form-label">Max Price</label>
+        <input type="number" class="form-control" id="max-price" [(ngModel)]="maxPrice" name="maxPrice">
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary" (click)="onSearch()">Search</button>
+      </div>
+    </form>
+  </div>

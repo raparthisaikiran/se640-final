@@ -1,0 +1,36 @@
+<div class="container">
+        <div class="vehicle-container">
+            <div class="vehicle">
+                <img src={{vehicle.imageUrl[0]}} alt="">
+                <div class="details">
+                    Vehicle: {{vehicle.vehicle}}<br>
+                    Year: {{vehicle.year}}<br>
+                    <span class="price">Price: ${{vehicle.price}}</span>
+                </div>
+                <div class="location" (click)="onLocationClick()">
+                    <img src="../../assets/images/location.png" alt="">
+                </div>
+            </div>
+            <div class="images">
+                <img src={{vehicle.imageUrl[1]}} alt="">
+                <img src={{vehicle.imageUrl[2]}} alt="">
+                <img src={{vehicle.imageUrl[3]}} alt="">
+                <img src={{vehicle.imageUrl[4]}} alt="">
+            </div>
+            <ng-container *ngIf="!showLocation">
+                <div class="reaction-container" >
+                    <!-- Use the appropriate image paths for your icons -->
+                    <img class="reaction" src="../../assets/images/like-icon.png" alt="Like" (click)="onRating('Excellent')">
+                    <img class="reaction" src="../../assets/images/love-icon.png" alt="Love" (click)="onRating('Good')">
+                    <img class="reaction" src="../../assets/images/haha-icon.jpeg" alt="Haha" (click)="onRating('Fair')">
+                    <img class="reaction" src="../../assets/images/angry-icon.png" alt="Angry" (click)="onRating('Poor')">
+                    <img class="reaction" src="../../assets/images/poop-icon.webp" alt="Poop" (click)="onRating('Terrible')">
+                  </div>
+            </ng-container>
+            <ng-container *ngIf="showLocation">
+                <div class="googleMap" style="width:100%;height:400px">
+                <img src="../../assets/images/map.png" alt="">
+                </div>
+            </ng-container>
+        </div>
+</div>

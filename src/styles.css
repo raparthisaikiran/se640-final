@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* .container{
+    margin: 10em;
+} */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 25px;
+}
+
+.vehicle {
+    background-color: #333;
+    color: #fff;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+}
+
+.vehicle-container {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.vehicle>img {
+    width: 100px;
+    height: auto;
+    border-bottom: 1px solid #fff;
+}
+
+
+
+.details {
+    padding: 5px;
+    color: white;
+    font-size: 18px;
+}
+
+.price {
+    color: white;
+    font-weight: bold;
+}
+
+.images {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.images>img {
+    width: 100px;
+    height: auto;
+}
+.location >img{
+    width: 50px;
+    height: 50px;
+}
