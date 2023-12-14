@@ -10,6 +10,7 @@ import { MapComponent } from './map/map.component';
 import { RatingComponent } from './rating/rating.component';
 import { FormsModule } from '@angular/forms';
 import { NgChartsModule } from 'ng2-charts';
+import { SaleComponent } from './sale/sale.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NgChartsModule } from 'ng2-charts';
     FilterComponent,
     VehicleComponent,
     MapComponent,
-    RatingComponent
+    RatingComponent,
+    SaleComponent
   ],
   imports: [
     BrowserModule,
